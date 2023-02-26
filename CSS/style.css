@@ -99,9 +99,15 @@ body {
 
 /** Categories **/
 
-.categories label{
+.categories label {
     padding-right: 10px;
 }
+
+input[type="checkbox"] {
+    accent-color: #026773;
+    cursor: pointer;
+}
+
 
 /** Buscador **/
 
@@ -148,9 +154,17 @@ body {
 
 .card {
     border: none;
-    border-radius: 0;
-    box-shadow: .3rem .3rem .6rem #dae1f3, 
-        -.2rem -.2rem .5rem #FFFFFF;
+    border-radius: 0px;
+    box-shadow: .3rem .3rem .6rem #bbc2d4, 
+    -.2rem -.2rem .5rem #FFFFFF;
+}
+
+#eventsContainer {
+    gap: 28px;
+}
+
+.card-body {
+    padding: 20px 22px;
 }
 
 .card-img-top {
@@ -160,16 +174,16 @@ body {
     border-bottom: 5px solid #E1B651;
 }   
 
+.text {
+    color:#5a5a5a;
+}
+
 .details {
-    padding-top: 12px;
+    padding-top: 15px;
 }
 
 .details h6 {
-    font-size: 16px;
-}
-
-.price {
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 600;
     padding-top: 10px;
 }
@@ -184,8 +198,9 @@ body {
     background-color: #012E40;
     border: 2px solid #3CA6A6;
     border-radius: 50px;
-    padding: 5px 16px;
+    padding: 4px 15px;
     color: #fff;
+    font-size: 15px;
 }
 
 .btn:hover {
@@ -267,7 +282,7 @@ td {
 /** HTML Details **/
 
 .main-detail {
-    min-height: 60vh;
+    min-height: 70vh;
 }
 
 .img-detail {
@@ -277,17 +292,17 @@ td {
     position: absolute;
     z-index: 2;
     left: 180px;
+    box-shadow: .3rem .3rem .6rem #dae1f3, 
+    -.2rem -.2rem .5rem #FFFFFF;
 }
 
-.meme {
+.all-detail {
     position: relative;
 }
 
 .container-text-detail {
     background-color: #012E40;
     position: absolute;
-    /* right: 100px; */
-    /* top: 330px; */
     top: 100px;
     right: 175px;
     z-index: 3;
@@ -300,6 +315,8 @@ td {
     z-index: 1;
     top: 48px;
     right: 175px;
+    box-shadow: .3rem .3rem .6rem #dae1f3, 
+    -.2rem -.2rem .5rem #FFFFFF;
 }
 
 .info-detail {
@@ -313,11 +330,6 @@ td {
 
 .info-detail p {
     color:#fff;
-}
-
-.card-details {
-    box-shadow: .3rem .3rem .6rem #dae1f3, 
-    -.2rem -.2rem .5rem #FFFFFF;
 }
 
 @media only screen and (max-width: 1199.98px) {
@@ -345,5 +357,11 @@ td {
     }
     .colour {
      display: none;
+    }
+}
+
+@media only screen and (max-width: 767.98px){
+    .categories {
+        text-align: center;
     }
 }
