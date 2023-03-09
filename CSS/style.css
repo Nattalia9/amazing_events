@@ -194,11 +194,31 @@ input[type="checkbox"] {
     color: #026773;
 }
 
+.card-date {
+    color: rgb(44, 44, 44);
+    font-size: 14px;
+    margin: 0;
+}
+
+.card-date i{
+    color: rgb(34, 34, 34);
+    font-size: 14px;
+    padding-right: 5px;
+}
+
+.text .card-line{
+    height: 10px;
+    width: 25px;
+    border-bottom: 2.5px solid #026773;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
 .btn {
     background-color: #012E40;
     border: 2px solid #3CA6A6;
     border-radius: 50px;
-    padding: 4px 15px;
+    padding: 5px 15px;
     color: #fff;
     font-size: 15px;
 }
@@ -262,19 +282,20 @@ td {
 .form-control {
     color: #026773;
     background: none;
-    border-color: #D1CDC7;
-    outline: 0;
+    border: none;
+    outline: none;
     box-shadow: none;
-    border-bottom: 2px solid;
+    border-bottom: 2px solid #026773;
     padding: 0;
     font-size: 20px;
+    border-radius: 0;
 }
   
 .form-control:focus {
     color: #3CA6A6;
     background: none;
-    border-color: #D1CDC7;
-    outline: 0;
+    border: none;
+    outline: none;
     box-shadow: none;
     border-bottom: 3px solid;
 }
@@ -286,12 +307,12 @@ td {
 }
 
 .img-detail {
-    height: 360px;
-    width: 550px;
+    height: 420px;
+    width: 650px;
     object-fit: cover;
     position: absolute;
     z-index: 2;
-    left: 180px;
+    left: 140px;
     box-shadow: .3rem .3rem .6rem #dae1f3, 
     -.2rem -.2rem .5rem #FFFFFF;
 }
@@ -303,37 +324,81 @@ td {
 .container-text-detail {
     background-color: #012E40;
     position: absolute;
-    top: 100px;
-    right: 175px;
+    top: 95px;
+    right: 135px;
     z-index: 3;
 }
+
 .colour {
     background-color: #D1CDC7;
-    height: 360px;
+    height: 420px;
     width: 750px;
     position: absolute;
     z-index: 1;
     top: 48px;
-    right: 175px;
+    right: 135px;
     box-shadow: .3rem .3rem .6rem #dae1f3, 
     -.2rem -.2rem .5rem #FFFFFF;
 }
 
 .info-detail {
-    padding: 32px 20px;
+    padding: 25px 20px;
 }
 
 .info-detail h3 {
     color:#E1B651;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
 }
 
 .info-detail p {
     color:#fff;
 }
 
-@media only screen and (max-width: 1199.98px) {
+.card-icon i {
+    color: #3CA6A6;
+    font-size: 14px;
+    padding-right: 6px;
+}
+
+.card-icon {
+    color: #3CA6A6;
+}
+
+.info-detail .color-details {
+    height: 10px;
+    width: 25px;
+    border-bottom: 2.5px solid #E1B651;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1399.98px) {
+    .img-detail {
+        left: 80px;
+    }
+
+    .container-text-detail {
+        right: 75px;
+        top: 70px;
+    }
+
     .colour {
+        right: 75px;
+    }
+}
+
+@media only screen and (max-width: 1199.98px) {
+    .img-detail {
+        left: 10px;
+    }
+
+    .container-text-detail {
+        right: 5px;
+        top: 70px;
+    }
+    
+    .colour {
+        right: 5px;
         width: 560px;
     }
 }
