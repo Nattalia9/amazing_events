@@ -11,6 +11,7 @@
 body {
     background-color: #F1F3F4;
     font-family: 'Albert Sans', sans-serif;
+    min-height: 100vh;
 }
 
 /** Navbar **/
@@ -93,9 +94,10 @@ body {
     font-size: 35px;
 }
 
-/* main {
+main {
     min-height: calc(100vh - 88px - 58.69px - 127.19);
-} */
+    margin-bottom: 7rem;
+}
 
 /** Categories **/
 
@@ -107,7 +109,6 @@ input[type="checkbox"] {
     accent-color: #026773;
     cursor: pointer;
 }
-
 
 /** Buscador **/
 
@@ -240,6 +241,11 @@ footer h6 {
     color:#53e0e0;
 }
 
+footer {
+    position: stiky;
+    bottom: 0;
+}
+
 /** Stats > Table **/
 
 .box-table {
@@ -265,6 +271,12 @@ td {
     height: 35px;
 }  
 
+.td-color {
+    background-color: #026773; 
+    color: #fff;
+    height: 35px;
+}
+
 .table-style {
     width: 100%;
 }
@@ -277,6 +289,7 @@ td {
     box-shadow: .3rem .3rem .6rem #dae1f3, 
     -.2rem -.2rem .5rem #FFFFFF;
     border-top: 4px solid #E1B651;
+    margin-bottom: 3rem;
 }
 
 .form-control {
@@ -302,9 +315,9 @@ td {
 
 /** HTML Details **/
 
-.main-detail {
+/* .main-detail {
     min-height: 70vh;
-}
+} */
 
 .img-detail {
     height: 420px;
