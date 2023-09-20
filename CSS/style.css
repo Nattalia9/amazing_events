@@ -24,7 +24,7 @@ body {
     color: #fff;
 }
 
- .nav-link:hover {
+.nav-link:hover {
     /* color: #E1B651; */
     color: #fff;
 } 
@@ -95,7 +95,7 @@ body {
 }
 
 main {
-    min-height: calc(100vh - 88px - 58.69px - 127.19);
+    min-height: calc(100vh - 57.69px - 144px - 72px);
     margin-bottom: 7rem;
 }
 
@@ -135,7 +135,7 @@ input[type="checkbox"] {
     outline: 2px solid #3CA6A6;  
 }
 
-.h-search-form button {
+.h-search-form span {
     position: absolute;
     right: 7px;
     height: 32px;
@@ -145,10 +145,6 @@ input[type="checkbox"] {
     top: 5px;
     border-radius: 50px;
     width: 70px;
-}
-
-.h-search-form button:hover{
-    background: #024959;
 }
 
 /** Cards **/
@@ -263,7 +259,7 @@ th {
     padding: 12px; 
     color: #131313;
 }
-     
+    
 td {
     padding: 8px 15px; 
     background-color: #024959;
@@ -289,7 +285,6 @@ td {
     box-shadow: .3rem .3rem .6rem #dae1f3, 
     -.2rem -.2rem .5rem #FFFFFF;
     border-top: 4px solid #E1B651;
-    margin-bottom: 3rem;
 }
 
 .form-control {
@@ -303,7 +298,7 @@ td {
     font-size: 20px;
     border-radius: 0;
 }
-  
+
 .form-control:focus {
     color: #3CA6A6;
     background: none;
@@ -315,9 +310,10 @@ td {
 
 /** HTML Details **/
 
-/* .main-detail {
-    min-height: 70vh;
-} */
+.main-detail {
+    min-height: 72vh;
+    /* min-height: calc(100vh - 57.69px - 72px); */
+}
 
 .img-detail {
     height: 420px;
@@ -434,12 +430,6 @@ td {
         right: 0px;
     }
     .colour {
-     display: none;
-    }
-}
-
-@media only screen and (max-width: 767.98px){
-    .categories {
-        text-align: center;
+    display: none;
     }
 }

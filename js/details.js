@@ -16,7 +16,7 @@ function getData(){
         const cardDetails = arrayEvents.filter(event => event._id == id)
         createDetailsCard(cardDetails)
         filterAsistens(cardDetails)
-     })
+    })
     .catch( error => console.log(error.message))
 }
 
@@ -54,7 +54,7 @@ function createDetailsCard(cardId){
     containerDetails.innerHTML = card
 }
 
- function filterAsistens(cardId) {
+function filterAsistens(cardId) {
     const asistents = document.querySelector('.containerAsistents');
         cardId.some(event => {
             if(event.estimate){
