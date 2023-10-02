@@ -14,10 +14,14 @@ body {
     min-height: 100vh;
 }
 
-/** Navbar **/
+/* Navbar **/
 
 .dark-blue {
     background-color: #012E40;
+}
+
+.carousel-top {
+    padding-top: 57.69px;
 }
 
 .nav-link {
@@ -70,7 +74,7 @@ body {
     transform-origin: bottom left;
 }
 
-/** Carousel **/
+/* Carousel **/
 
 .carousel-item {
     color: white;
@@ -433,3 +437,5 @@ td {
     display: none;
     }
 }
+
+
